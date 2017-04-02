@@ -1,0 +1,33 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - layout
+// global layout classes - height, width, padding, margin, etc.
+
+.navbar-header {
+  float: left;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar-right {
+  float: right;
+  margin-right: -15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+.navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  right: 0;
+  left: auto;
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .navbar-nav .open .dropdown-menu {
+    background-color: $brand-primary;
+  }
+}

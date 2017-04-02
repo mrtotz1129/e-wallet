@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "root": {
+      "pathToSassDirectory": "./",
+      "sassDirectory": "src",
+      "sassImportFile": "index.scss"
+    },
+    "modules": {
+      "modulesDirectory": "modules",
+      "modulesImportFile": "_modules.scss",
+      "moduleFiles": [
+        "_balance-panel.scss",
+        "_sidebar-content.scss",
+        "_sidebar.scss"
+      ]
+    }
+  },
+  "template": {
+    "directories": [
+      "components",
+      "global",
+      "libs",
+      "views"
+    ],
+    "files": [
+      "index.js",
+      "global\\_base.scss",
+      "global\\_layout.scss",
+      "global\\_settings.scss",
+      "global\\_skin.scss",
+      "global\\_typography.scss",
+      "global\\_utilities.scss",
+      "libs\\_library-variable-overrides.scss",
+      "views\\index.html",
+      "views\\login.html"
+    ]
+  }
+}

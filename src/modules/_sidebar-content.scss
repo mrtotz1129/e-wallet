@@ -1,0 +1,21 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - sidebar-content module
+// styles for the sidebar-content module
+
+.sidebar-content {
+  > .menu {
+    padding-left: 0;
+    margin-bottom: 0;
+    > li {
+      display: block;
+      > a {
+        display: block;
+        padding: $padding-large-vertical $padding-large-horizontal;
+        text-decoration: none;
+        &:hover {
+          background-color: rgba(0,0,0,0.125);
+        }
+      }
+    }
+  }
+}

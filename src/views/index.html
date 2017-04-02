@@ -6,5 +6,146 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+           aria-expanded="false">Retailer <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Change Password</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Log out</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="sidebar-menu">
+  <div class="overflow">
+    <div class="sidebar-content">
+      <div class="balance-panel">
+        <div class="text">
+          Balance: <div class="credits">28</div>
+        </div>
+        <div class="actions">
+          <button type="button" class="btn btn-sm btn-link">
+            Refresh
+          </button>
+        </div>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Wallet Replenishments</a></li>
+        <li><a href="#">Mobile Reloads</a></li>
+        <li><a href="#">Wallet Transfers</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container-fluid">
+    <ul class="nav nav-pills" role="tablist">
+      <li role="presentation" class="active">
+        <a href="#sections-reload" aria-controls="sections-reload" role="tab" data-toggle="tab">Reload Mobile</a>
+      </li>
+      <li role="presentation">
+        <a href="#sections-transfer" aria-controls="sections-transfer" role="tab" data-toggle="tab">Transfer
+          Balance</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" role="tabpanel" id="sections-reload">
+        <h2>Reload Mobile</h2>
+        <form action="">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="reload-telco">Telco</label>
+                <select name="telco" id="reload-telco" class="form-control">
+                  <option value=""></option>
+                  <option value="others">Others</option>
+                  <option value="smart">Smart</option>
+                  <option value="sun">Sun</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="reload-targetnumber">Target Number</label>
+                <input type="text" id="reload-targetnumber" class="form-control" placeholder="Target Number">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="reload-producttype">Product Type</label>
+                <select name="product_type" disabled id="reload-producttype" class="form-control">
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="reload-denomination">Denomination</label>
+                <select name="denomination" disabled id="reload-denomination" class="form-control">
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="text-right">
+              <button class="btn btn-primary" type="submit">Reload</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="tab-pane" role="tabpanel" id="sections-transfer">
+        <h2>Transfer Balance</h2>
+        <form action="">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="transfer-from">From</label>
+                <select name="telco" disabled id="transfer-from" class="form-control">
+                  <option value=""></option>
+                  <option selected value="own">Own Account</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="transfer-target">Target</label>
+                <select name="product_type" id="transfer-target" class="form-control">
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="transfer-amount">Transfer Amount</label>
+                <input type="text" id="transfer-amount" class="form-control" placeholder="Amount">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="text-right">
+              <button class="btn btn-primary" type="submit">Transfer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </body>
 </html>

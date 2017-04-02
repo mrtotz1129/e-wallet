@@ -7,6 +7,7 @@
 const path = require('path'),
     ExtractTextPlugin = require('extract-text-webpack-plugin'),
     HtmlPlugin = require('html-webpack-plugin'),
+    webpack = require('webpack'),
 
 extractStyles = new ExtractTextPlugin('[name].css');
 
@@ -67,6 +68,10 @@ module.exports = {
             filename: 'index.html',
             template: './views/index.html'
         }),
-        extractStyles
+        extractStyles,
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
     ]
 };

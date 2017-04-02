@@ -1,0 +1,18 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - balance-panel module
+// styles for the balance-panel module
+
+.balance-panel {
+  @extend .clearfix;
+  padding: $padding-large-vertical $padding-large-horizontal;
+  > .text {
+    @extend .pull-left;
+  }
+  > .text > .credits {
+    @extend .h1;
+    font-size: 500%;
+  }
+  > .actions {
+    @extend .pull-right;
+  }
+}

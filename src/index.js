@@ -5,3 +5,4 @@
  */
 
 require('./index.scss');
+require('bootstrap-sass');
