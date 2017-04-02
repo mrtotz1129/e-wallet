@@ -1,0 +1,19 @@
+{
+  "name": "e-wallet",
+  "version": "0.0.0",
+  "description": "e-wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtotz1129/e-wallet.git"
+  },
+  "author": "TheoryOfNekomata <allan.crisostomo@outlook.com> (https://temoto-kun.github.io/)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mrtotz1129/e-wallet/issues"
+  },
+  "homepage": "https://github.com/mrtotz1129/e-wallet#readme"
+}
