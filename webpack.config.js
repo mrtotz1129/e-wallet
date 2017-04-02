@@ -13,15 +13,15 @@ extractStyles = new ExtractTextPlugin('[name].css');
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: {
-        script: './index.js'
+        app: './index.js'
     },
     output: {
         path: path.resolve(__dirname, 'public'),
-        filename: 'script.js'
+        filename: '[name].js'
     },
     resolve: {
         modules: ['node_modules'],
-        mainFiles: ['index', 'script', 'style'],
+        mainFiles: ['script', 'style'],
         extensions: ['.js', '.json', '.scss']
     },
     module: {
@@ -31,6 +31,14 @@ module.exports = {
                 loaders: [
                     {
                         loader: 'json-loader'
+                    }
+                ]
+            },
+            {
+                test: /\.(eot|svg|ttf|otf|woff2?)$/,
+                loaders: [
+                    {
+                        loader: 'url-loader'
                     }
                 ]
             },
